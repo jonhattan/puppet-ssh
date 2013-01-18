@@ -51,4 +51,4 @@ Host *
     HashKnownHosts yes
     GSSAPIAuthentication yes
     GSSAPIDelegateCredentials no
-    UserKnownHostsFile /dev/null
+#    UserKnownHostsFile /dev/null
