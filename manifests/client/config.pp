@@ -8,7 +8,5 @@ class ssh::client::config {
   }
 
   # Workaround for http://projects.reductivelabs.com/issues/2014
-  file { $ssh::params::ssh_known_hosts:
-    mode => '0644',
-  }
+  ensure_resource('file', $ssh::params::ssh_known_hosts, {mode => '0644'})
 }
